@@ -3,9 +3,9 @@ import GameSavingLoader from './GameSavingLoader.js';
 
 console.log('Работает');
 
-GameSavingLoader.load().then((saving) => {
-  // saving объект класса GameSaving
-  console.log(saving);
-}, (error) => {
-  console.log(error);
-});
+GameSavingLoader.load().then(saving => { 
+  console.log(saving);  
+})  
+.catch(error => {  
+  console.log(error);  
+}); 
